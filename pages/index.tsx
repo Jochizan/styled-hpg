@@ -1,23 +1,8 @@
 import type { NextPage } from 'next';
-import styled from 'styled-components';
-
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
-
-const Wrapper = styled.section`
-  padding: 4em;
-  background: papayawhip;
-`;
+import Sidebar from '../components/Sidebar';
 
 const Home: NextPage = () => {
-  return (
-    <Wrapper>
-      <Title>Hello world</Title>
-    </Wrapper>
-  );
+  return <Sidebar />;
 };
 
 export default Home;
